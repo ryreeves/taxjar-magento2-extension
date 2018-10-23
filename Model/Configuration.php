@@ -21,7 +21,7 @@ use Magento\Config\Model\ResourceModel\Config;
 
 class Configuration
 {
-    const TAXJAR_VERSION              = '1.0.3';
+    const TAXJAR_VERSION              = '1.1.0';
     const TAXJAR_AUTH_URL             = 'https://app.taxjar.com';
     const TAXJAR_API_URL              = 'https://api.taxjar.com/v2';
     const TAXJAR_FEED_URL             = 'www.taxjar.com/magento2/feed.xml';
@@ -39,6 +39,9 @@ class Configuration
     const TAXJAR_STATES               = 'tax/taxjar/states';
     const TAXJAR_TRANSACTION_AUTH     = 'tax/taxjar/transaction_auth';
     const TAXJAR_TRANSACTION_SYNC     = 'tax/taxjar/transactions';
+    const TAXJAR_DEFAULT_LOG          = 'default.log';
+    const TAXJAR_CALCULATIONS_LOG     = 'calculations.log';
+    const TAXJAR_TRANSACTIONS_LOG     = 'transactions.log';
     const TAXJAR_EXEMPT_TAX_CODE      = '99999';
 
     /**
