@@ -23,6 +23,13 @@ interface AddressValidationInterface
     /**
      * @api
      *
+     * @return mixed
+     */
+    public function canValidateAddress();
+
+    /**
+     * @api
+     *
      * @param string $street0
      * @param string $street1
      * @param string $city

@@ -223,7 +223,7 @@ class Client
                 $apiUrl .= '/transactions/refunds';
                 break;
             case 'addressValidation':
-                $apiUrl .= 'TODO';
+                $apiUrl .= '/addresses/validate';
                 break;
         }
 
