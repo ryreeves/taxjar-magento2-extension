@@ -18,4 +18,11 @@
 // @codingStandardsIgnoreFile
 
 /** @var \Magento\Customer\Block\Address\Edit $block */
+
+$path = \Taxjar\SalesTax\Model\AddressValidation::ADDRESS_VALIDATION_SCOPE_PATH;
+$validateAddress = (bool) $this->helper('Taxjar\SalesTax\Helper\Data')->getConfig($path);
 ?>
+
+<script>
+    var taxjar_validate_address = <?php echo $validateAddress ? "true" : "false"; ?>;
+</script>
